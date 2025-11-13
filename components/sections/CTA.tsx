@@ -8,8 +8,13 @@ import { AnimatedSection } from "@/components/animations/AnimatedSection";
 
 export default function CTA() {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-br from-[var(--primary-green)] via-[var(--green-600)] to-[var(--green-700)] text-white">
-      <Container>
+    <section className="py-24 md:py-32 lg:py-40 bg-gradient-to-br from-[var(--primary-green)] via-[var(--green-600)] to-[var(--green-700)] text-white relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-10 h-64 w-64 rounded-full bg-white blur-3xl" />
+        <div className="absolute bottom-20 right-10 h-96 w-96 rounded-full bg-white blur-3xl" />
+      </div>
+      <Container className="relative z-10">
         <AnimatedSection className="text-center">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl lg:text-5xl">
             Rejoignez l'écosystème Soutrali Deals

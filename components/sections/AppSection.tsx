@@ -9,7 +9,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function AppSection() {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-br from-[var(--primary-green)] via-[var(--green-600)] to-[var(--green-700)] text-white relative overflow-hidden">
+    <section className="py-24 md:py-32 lg:py-40 bg-gradient-to-br from-[var(--primary-green)] via-[var(--green-600)] to-[var(--green-700)] text-white relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 h-64 w-64 rounded-full bg-white blur-3xl" />

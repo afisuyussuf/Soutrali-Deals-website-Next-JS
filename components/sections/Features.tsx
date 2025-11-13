@@ -9,10 +9,11 @@ import { StaggerContainer, StaggerItem } from "@/components/animations/AnimatedS
 
 export default function Features() {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-b from-white to-[var(--green-50)]">
+    <section className="py-24 md:py-32 lg:py-40 bg-gradient-to-b from-[var(--gray-50)] to-white">
       <Container>
         <SectionHeader
           title="Fonctionnalités clés"
+          subtitle="Avantages"
           description="Tout ce dont vous avez besoin pour développer votre activité en ligne"
         />
 

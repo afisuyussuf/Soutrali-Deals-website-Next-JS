@@ -40,7 +40,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       {/* Top Section - Light Green Background */}
-      <div className="relative bg-[var(--green-50)] py-16 md:py-24 lg:py-32">
+      <div className="relative bg-[var(--green-50)] py-24 md:py-32 lg:py-40">
         <Container>
           <motion.div
             variants={containerVariants}
@@ -93,8 +93,8 @@ export default function Hero() {
         </Container>
       </div>
 
-      {/* Bottom Section - Dark Green Background with Graphics */}
-      <div className="relative bg-gradient-to-b from-[var(--green-600)] to-[var(--green-700)] py-12 md:py-20 lg:py-32">
+          {/* Bottom Section - Dark Green Background with Graphics */}
+          <div className="relative bg-gradient-to-b from-[var(--green-600)] to-[var(--green-700)] py-24 md:py-32 lg:py-40">
         <Container>
           <div className="relative grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
             {/* Left Side - Phone and Icons */}

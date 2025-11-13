@@ -72,18 +72,18 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   return (
     <Card
       hover
-      className={cn("text-center", className)}
+      className={cn("h-full text-center group", className)}
       {...props}
     >
-      <div className="mb-4 flex justify-center">
-        <div className="rounded-2xl bg-gradient-to-br from-[var(--green-50)] to-[var(--green-100)] p-4 shadow-md transition-transform duration-200 group-hover:scale-110">
+      <div className="mb-6 flex justify-center">
+        <div className="rounded-2xl bg-gradient-to-br from-[var(--green-50)] to-[var(--green-100)] p-5 shadow-md transition-transform duration-200 group-hover:scale-110">
           <IconComponent className="h-8 w-8 text-[var(--primary-green)]" />
         </div>
       </div>
-      <h3 className="mb-2 text-xl font-semibold text-[var(--gray-900)]">
+      <h3 className="mb-3 text-xl font-bold text-[var(--gray-900)]">
         {title}
       </h3>
-      <p className="text-[var(--gray-600)]">{description}</p>
+      <p className="text-[var(--gray-600)] leading-relaxed">{description}</p>
     </Card>
   );
 };

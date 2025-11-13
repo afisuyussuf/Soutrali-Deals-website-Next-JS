@@ -20,10 +20,11 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-20 md:py-32 bg-[var(--gray-50)]">
+    <section className="py-24 md:py-32 lg:py-40 bg-white">
       <Container>
         <SectionHeader
           title="Ce que disent nos utilisateurs"
+          subtitle="Témoignages"
           description="Découvrez les témoignages de ceux qui nous font confiance"
         />
 

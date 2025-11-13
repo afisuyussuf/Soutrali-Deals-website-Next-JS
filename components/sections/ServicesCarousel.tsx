@@ -60,10 +60,11 @@ export default function ServicesCarousel() {
   };
 
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-br from-[var(--green-50)] to-white">
+    <section className="py-24 md:py-32 lg:py-40 bg-gradient-to-b from-white to-[var(--gray-50)]">
       <Container>
         <SectionHeader
           title="Nos Services"
+          subtitle="Offres"
           description="Découvrez notre gamme complète de services professionnels"
         />
 

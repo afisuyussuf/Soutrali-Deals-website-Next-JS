@@ -54,7 +54,7 @@ const partners = [
 
 export default function Partners() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-white to-[var(--green-50)]">
+    <section className="py-24 md:py-32 lg:py-40 bg-white">
       <Container>
         <SectionHeader
           title="Nos Partenaires"
