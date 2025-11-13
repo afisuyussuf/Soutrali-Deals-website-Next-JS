@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Twitter, Instagram, Linkedin, Mail } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, Mail, Youtube } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 
 const footerLinks = {
@@ -21,7 +21,7 @@ const footerLinks = {
   ],
   social: [
     { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Youtube, href: "#", label: "YouTube" },
     { icon: Instagram, href: "#", label: "Instagram" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
   ],
@@ -69,7 +69,7 @@ export default function Footer() {
             {/* Company Links */}
             <div>
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">
-                Entreprise
+                ENTREPRISE
               </h3>
               <ul className="space-y-3">
                 {footerLinks.company.map((link) => (
@@ -88,7 +88,7 @@ export default function Footer() {
             {/* Support Links */}
             <div>
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">
-                Support
+                SUPPORT
               </h3>
               <ul className="space-y-3">
                 {footerLinks.support.map((link) => (
@@ -107,7 +107,7 @@ export default function Footer() {
             {/* Newsletter */}
             <div>
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">
-                Newsletter
+                NEWSLETTER
               </h3>
               <p className="mb-4 text-sm text-gray-400">
                 Restez informé de nos dernières actualités et offres

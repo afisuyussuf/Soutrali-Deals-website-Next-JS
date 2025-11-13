@@ -28,9 +28,9 @@ export default function CTA() {
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button
-              variant="outline"
+              variant="primary"
               size="lg"
-              className="border-2 border-white text-white hover:bg-white/10"
+              className="bg-[var(--primary-green)] text-white hover:bg-[var(--green-600)]"
             >
               Inscription acheteur
             </Button>

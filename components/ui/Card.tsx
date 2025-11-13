@@ -105,9 +105,9 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
 }) => {
   return (
     <Card className={cn("", className)} {...props}>
-      <p className="mb-6 text-[var(--gray-700)] italic">"{content}"</p>
+      <p className="mb-6 text-lg text-[var(--gray-700)] leading-relaxed">"{content}"</p>
       <div className="flex items-center gap-4">
-        <div className="h-12 w-12 rounded-full bg-[var(--gray-200)] flex items-center justify-center">
+        <div className="h-12 w-12 rounded-full bg-[var(--gray-200)] flex items-center justify-center overflow-hidden">
           {image ? (
             <img
               src={image}
