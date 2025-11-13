@@ -4,30 +4,27 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import FloatingButtons from "@/components/ui/FloatingButtons";
+import { generateMetadata as genMeta } from "@/lib/metadata";
+import { siteConfig } from "@/config/site";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
+  preload: true,
+  adjustFontFallback: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Soutrali Deals - Le hub qui connecte services, commerce et paiements",
-  description: "Plateforme ivoirienne innovante de mise en relation, e-commerce et services connectés. Connectez services, commerce et paiements en un seul espace.",
-  keywords: ["Soutrali Deals", "e-commerce Côte d'Ivoire", "marketplace", "services", "paiements", "Abidjan"],
-  authors: [{ name: "Soutrali Deals" }],
-  openGraph: {
-    title: "Soutrali Deals - Le hub qui connecte services, commerce et paiements",
-    description: "Plateforme ivoirienne innovante de mise en relation, e-commerce et services connectés",
-    type: "website",
-    locale: "fr_CI",
-  },
-};
+export const metadata: Metadata = genMeta({
+  title: siteConfig.name,
+  description: siteConfig.description,
+});
 
 export default function RootLayout({
   children,

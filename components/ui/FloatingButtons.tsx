@@ -29,7 +29,7 @@ export default function FloatingButtons() {
 
   const openWhatsApp = () => {
     // Numéro WhatsApp (à adapter selon vos besoins)
-    const phoneNumber = "2250000000000"; // Format international sans +
+    const phoneNumber = "2250787049637"; // Format international sans +
     const message = encodeURIComponent(
       "Bonjour, je souhaite en savoir plus sur Soutrali Deals"
     );

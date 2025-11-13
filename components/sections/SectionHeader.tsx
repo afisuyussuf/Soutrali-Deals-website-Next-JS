@@ -8,6 +8,7 @@ interface SectionHeaderProps {
   subtitle?: string;
   description?: string;
   className?: string;
+  align?: "left" | "center" | "right";
 }
 
 export const SectionHeader: React.FC<SectionHeaderProps> = ({
@@ -15,19 +16,26 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   subtitle,
   description,
   className,
+  align = "center",
 }) => {
+  const alignClasses = {
+    left: "text-left",
+    center: "text-center mx-auto",
+    right: "text-right ml-auto",
+  };
+
   return (
-    <div className={cn("text-center mb-12", className)}>
+    <div className={cn("mb-12 md:mb-16", alignClasses[align], className)}>
       {subtitle && (
-        <p className="text-sm font-semibold uppercase tracking-wider text-[var(--primary-green)] mb-2">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[var(--primary-green)]">
           {subtitle}
         </p>
       )}
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--gray-900)] mb-4">
+      <h2 className="mb-4 text-3xl font-bold leading-tight text-[var(--gray-900)] md:text-4xl lg:text-5xl">
         {title}
       </h2>
       {description && (
-        <p className="text-lg text-[var(--gray-600)] max-w-2xl mx-auto">
+        <p className="max-w-2xl text-base leading-relaxed text-[var(--gray-600)] md:text-lg">
           {description}
         </p>
       )}

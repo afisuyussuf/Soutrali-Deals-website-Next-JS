@@ -6,6 +6,7 @@ import Values from "@/components/sections/Values";
 import Stats from "@/components/sections/Stats";
 import AppSection from "@/components/sections/AppSection";
 import Testimonials from "@/components/sections/Testimonials";
+import Partners from "@/components/sections/Partners";
 import CTA from "@/components/sections/CTA";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Stats />
       <AppSection />
       <Testimonials />
+      <Partners />
       <CTA />
     </>
   );

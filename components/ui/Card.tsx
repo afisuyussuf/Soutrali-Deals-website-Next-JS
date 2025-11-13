@@ -26,9 +26,9 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
       <div
         ref={ref}
         className={cn(
-          "rounded-xl bg-white p-6 shadow-sm border border-[var(--gray-200)] transition-all duration-300",
+          "rounded-2xl bg-white p-6 shadow-sm border border-[var(--gray-200)] transition-all duration-200",
           hover &&
-            "hover:shadow-xl hover:-translate-y-2 hover:border-[var(--primary-green)]/20",
+            "hover:shadow-xl hover:-translate-y-1 hover:border-[var(--primary-green)]/30 cursor-pointer",
           className
         )}
         {...props}
@@ -76,7 +76,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
       {...props}
     >
       <div className="mb-4 flex justify-center">
-        <div className="rounded-full bg-gradient-to-br from-[var(--green-50)] to-[var(--green-100)] p-4 shadow-sm">
+        <div className="rounded-2xl bg-gradient-to-br from-[var(--green-50)] to-[var(--green-100)] p-4 shadow-md transition-transform duration-200 group-hover:scale-110">
           <IconComponent className="h-8 w-8 text-[var(--primary-green)]" />
         </div>
       </div>
