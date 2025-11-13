@@ -4,17 +4,8 @@ import React from "react";
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
-import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/animations/AnimatedSection";
-import { Smartphone, Download, CheckCircle2, ArrowRight } from "lucide-react";
-
-const appFeatures = [
-  "Commandes en temps réel",
-  "Notifications push",
-  "Paiements sécurisés",
-  "Suivi de livraison",
-  "Chat avec les vendeurs",
-  "Historique des transactions",
-];
+import { AnimatedSection } from "@/components/animations/AnimatedSection";
+import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function AppSection() {
   return (
