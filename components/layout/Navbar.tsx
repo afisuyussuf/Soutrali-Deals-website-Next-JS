@@ -26,10 +26,10 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-white/90 backdrop-blur-lg shadow-lg border-[var(--gray-200)]"
-          : "bg-white/95 backdrop-blur-sm border-transparent"
+          ? "bg-[var(--green-700)] shadow-lg"
+          : "bg-[var(--green-700)]"
       )}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -53,10 +53,10 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-[var(--primary-green)]",
+                  "text-sm font-medium text-white transition-colors hover:text-[var(--green-100)]",
                   pathname === link.href
-                    ? "text-[var(--primary-green)]"
-                    : "text-[var(--gray-700)]"
+                    ? "text-[var(--green-100)]"
+                    : "text-white"
                 )}
               >
                 {link.label}
@@ -67,12 +67,20 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:flex md:items-center md:space-x-4">
             <Link href="/login">
-              <Button variant="outline" size="sm">
+              <Button 
+                variant="outline" 
+                size="sm"
+                className="border-[var(--green-100)] text-white hover:bg-[var(--green-100)]/10"
+              >
                 Se connecter
               </Button>
             </Link>
             <Link href="/register">
-              <Button variant="primary" size="sm">
+              <Button 
+                variant="outline" 
+                size="sm"
+                className="border-[var(--green-100)] text-white hover:bg-[var(--green-100)]/10"
+              >
                 S'inscrire
               </Button>
             </Link>
@@ -85,9 +93,9 @@ export default function Navbar() {
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <X className="h-6 w-6 text-[var(--gray-900)]" />
+              <X className="h-6 w-6 text-white" />
             ) : (
-              <Menu className="h-6 w-6 text-[var(--gray-900)]" />
+              <Menu className="h-6 w-6 text-white" />
             )}
           </button>
         </div>
@@ -96,17 +104,17 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden">
-          <div className="space-y-1 border-t border-[var(--gray-200)] bg-white px-4 pb-4 pt-2">
+          <div className="space-y-1 border-t border-[var(--green-600)] bg-[var(--green-700)] px-4 pb-4 pt-2">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={cn(
-                  "block rounded-lg px-3 py-2 text-base font-medium transition-colors",
+                  "block rounded-lg px-3 py-2 text-base font-medium text-white transition-colors",
                   pathname === link.href
-                    ? "bg-[var(--green-50)] text-[var(--primary-green)]"
-                    : "text-[var(--gray-700)] hover:bg-[var(--gray-50)]"
+                    ? "bg-[var(--green-600)] text-white"
+                    : "text-white hover:bg-[var(--green-600)]"
                 )}
               >
                 {link.label}
