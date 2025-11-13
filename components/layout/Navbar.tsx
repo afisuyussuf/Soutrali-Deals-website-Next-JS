@@ -26,10 +26,8 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled
-          ? "bg-[var(--green-700)] shadow-lg"
-          : "bg-[var(--green-700)]"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-sm",
+        isScrolled && "shadow-md"
       )}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -37,26 +35,26 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <Image
-              src="/images/logo_soutralideals.jpg"
+              src="/images/logo menu.jpg"
               alt="Soutrali Deals Logo"
-              width={120}
-              height={40}
-              className="h-10 w-auto object-contain"
+              width={150}
+              height={50}
+              className="h-12 w-auto object-contain"
               priority
             />
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
+          <div className="hidden md:flex md:items-center md:space-x-6 lg:space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium text-white transition-colors hover:text-[var(--green-100)]",
+                  "text-sm font-medium transition-colors hover:text-[var(--primary-green)]",
                   pathname === link.href
-                    ? "text-[var(--green-100)]"
-                    : "text-white"
+                    ? "text-[var(--primary-green)]"
+                    : "text-[var(--green-700)]"
                 )}
               >
                 {link.label}
@@ -65,12 +63,12 @@ export default function Navbar() {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex md:items-center md:space-x-4">
+          <div className="hidden md:flex md:items-center md:space-x-3">
             <Link href="/login">
               <Button 
                 variant="outline" 
                 size="sm"
-                className="border-[var(--green-100)] text-white hover:bg-[var(--green-100)]/10"
+                className="border-[var(--primary-green)] text-[var(--green-700)] hover:bg-[var(--green-50)]"
               >
                 Se connecter
               </Button>
@@ -79,7 +77,7 @@ export default function Navbar() {
               <Button 
                 variant="outline" 
                 size="sm"
-                className="border-[var(--green-100)] text-white hover:bg-[var(--green-100)]/10"
+                className="border-[var(--primary-green)] text-[var(--green-700)] hover:bg-[var(--green-50)]"
               >
                 S'inscrire
               </Button>
@@ -93,9 +91,9 @@ export default function Navbar() {
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <X className="h-6 w-6 text-white" />
+              <X className="h-6 w-6 text-[var(--green-700)]" />
             ) : (
-              <Menu className="h-6 w-6 text-white" />
+              <Menu className="h-6 w-6 text-[var(--green-700)]" />
             )}
           </button>
         </div>
@@ -104,17 +102,17 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden">
-          <div className="space-y-1 border-t border-[var(--green-600)] bg-[var(--green-700)] px-4 pb-4 pt-2">
+          <div className="space-y-1 border-t border-[var(--gray-200)] bg-white px-4 pb-4 pt-2">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={cn(
-                  "block rounded-lg px-3 py-2 text-base font-medium text-white transition-colors",
+                  "block rounded-lg px-3 py-2 text-base font-medium transition-colors",
                   pathname === link.href
-                    ? "bg-[var(--green-600)] text-white"
-                    : "text-white hover:bg-[var(--green-600)]"
+                    ? "bg-[var(--green-50)] text-[var(--primary-green)]"
+                    : "text-[var(--green-700)] hover:bg-[var(--gray-50)]"
                 )}
               >
                 {link.label}
@@ -122,7 +120,7 @@ export default function Navbar() {
             ))}
             <div className="mt-4 space-y-2">
               <Link href="/login" onClick={() => setIsMobileMenuOpen(false)}>
-                <Button variant="outline" size="sm" className="w-full">
+                <Button variant="outline" size="sm" className="w-full border-[var(--primary-green)] text-[var(--green-700)]">
                   Se connecter
                 </Button>
               </Link>

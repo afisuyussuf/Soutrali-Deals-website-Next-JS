@@ -37,11 +37,11 @@ export default function Footer() {
             <div className="lg:col-span-1">
               <Link href="/" className="mb-4 flex items-center space-x-3">
                 <Image
-                  src="/images/logo_soutralideals.jpg"
+                  src="/images/logo menu.jpg"
                   alt="Soutrali Deals Logo"
-                  width={120}
-                  height={40}
-                  className="h-10 w-auto object-contain"
+                  width={150}
+                  height={50}
+                  className="h-12 w-auto object-contain"
                 />
               </Link>
               <p className="mt-4 text-sm text-gray-400">

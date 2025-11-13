@@ -39,7 +39,7 @@ export default function RootLayout({
         className={`${inter.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <main className="min-h-screen pt-20">
+        <main className="min-h-screen">
           {children}
         </main>
         <Footer />
