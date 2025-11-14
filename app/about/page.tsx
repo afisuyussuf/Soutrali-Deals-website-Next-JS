@@ -26,20 +26,20 @@ const valueIconMap: Record<string, LucideIcon> = {
 
 export default function AboutPage() {
   return (
-    <div className="py-20 md:py-32">
+    <div className="pt-24 pb-24 md:pt-32 md:pb-32 lg:pt-40 lg:pb-40">
       <Container>
         {/* Hero Section */}
-        <AnimatedSection className="mb-16 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl">
+        <AnimatedSection className="mb-16 md:mb-20 text-center">
+          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl lg:text-6xl">
             À propos de Soutrali Deals
           </h1>
-          <p className="mx-auto max-w-3xl text-lg text-[var(--gray-600)]">
+          <p className="mx-auto max-w-3xl text-lg text-[var(--gray-600)] md:text-xl">
             Nous construisons l'avenir du commerce digital en Côte d'Ivoire
           </p>
         </AnimatedSection>
 
         {/* Story */}
-        <AnimatedSection className="mb-16">
+        <AnimatedSection className="mb-16 md:mb-20">
           <Card className="p-8 md:p-12">
             <h2 className="mb-6 text-3xl font-bold text-[var(--gray-900)]">
               Notre histoire
@@ -67,7 +67,7 @@ export default function AboutPage() {
         </AnimatedSection>
 
         {/* Vision & Mission */}
-        <div className="mb-16 grid gap-8 md:grid-cols-2">
+        <div className="mb-16 md:mb-20 grid gap-8 md:grid-cols-2">
           <AnimatedSection>
             <Card className="h-full p-8">
               <h2 className="mb-4 text-2xl font-bold text-[var(--gray-900)]">

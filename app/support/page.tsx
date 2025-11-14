@@ -43,26 +43,26 @@ export default function SupportPage() {
   };
 
   return (
-    <div className="py-20 md:py-32">
+    <div className="pt-24 pb-24 md:pt-32 md:pb-32 lg:pt-40 lg:pb-40">
       <Container>
         {/* Hero */}
-        <AnimatedSection className="mb-16 text-center">
+        <AnimatedSection className="mb-16 md:mb-20 text-center">
           <div className="mb-6 flex justify-center">
             <div className="rounded-full bg-[var(--green-50)] p-6">
               <HelpCircle className="h-12 w-12 text-[var(--primary-green)]" />
             </div>
           </div>
-          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl">
+          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl lg:text-6xl">
             Centre de Support
           </h1>
-          <p className="mx-auto max-w-3xl text-lg text-[var(--gray-600)]">
+          <p className="mx-auto max-w-3xl text-lg text-[var(--gray-600)] md:text-xl">
             Nous sommes là pour vous aider. Contactez notre équipe support pour
             toute question ou problème.
           </p>
         </AnimatedSection>
 
         {/* Contact Methods */}
-        <div className="mb-16 grid gap-6 md:grid-cols-3">
+        <div className="mb-16 md:mb-20 grid gap-6 md:grid-cols-3">
           <AnimatedSection>
             <Card className="p-6 text-center">
               <div className="mb-4 flex justify-center">

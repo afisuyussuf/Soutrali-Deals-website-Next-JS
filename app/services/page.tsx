@@ -49,14 +49,14 @@ const benefits = [
 
 export default function ServicesPage() {
   return (
-    <div className="py-20 md:py-32">
+    <div className="pt-24 pb-24 md:pt-32 md:pb-32 lg:pt-40 lg:pb-40">
       <Container>
         {/* Hero */}
-        <AnimatedSection className="mb-16 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl">
+        <AnimatedSection className="mb-16 md:mb-20 text-center">
+          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl lg:text-6xl">
             Services professionnels
           </h1>
-          <p className="mx-auto max-w-3xl text-lg text-[var(--gray-600)]">
+          <p className="mx-auto max-w-3xl text-lg text-[var(--gray-600)] md:text-xl">
             Mettez en relation clients et prestataires pour tous vos besoins de
             services
           </p>
@@ -68,7 +68,7 @@ export default function ServicesPage() {
           description="Un processus simple et efficace pour tous"
         />
 
-        <div className="mb-16 grid gap-6 md:grid-cols-4">
+        <div className="mb-16 md:mb-20 grid gap-6 md:grid-cols-4">
           {[
             {
               step: 1,
@@ -115,7 +115,7 @@ export default function ServicesPage() {
           description="Explorez nos différentes catégories"
         />
 
-        <div className="mb-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mb-16 md:mb-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {serviceCategories.map((category, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
               <Card hover>
@@ -131,7 +131,7 @@ export default function ServicesPage() {
         </div>
 
         {/* Benefits */}
-        <div className="mb-16 grid gap-8 md:grid-cols-2">
+        <div className="mb-16 md:mb-20 grid gap-8 md:grid-cols-2">
           <AnimatedSection>
             <Card className="h-full p-8">
               <h2 className="mb-6 text-2xl font-bold text-[var(--gray-900)]">

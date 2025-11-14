@@ -10,13 +10,13 @@ export const metadata: Metadata = {
 
 export default function CGUPage() {
   return (
-    <div className="py-20 md:py-32">
+    <div className="pt-24 pb-24 md:pt-32 md:pb-32 lg:pt-40 lg:pb-40">
       <Container>
-        <AnimatedSection className="mb-12">
-          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl">
+        <AnimatedSection className="mb-16 md:mb-20 text-center">
+          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl lg:text-6xl">
             Conditions Générales d'Utilisation
           </h1>
-          <p className="text-lg text-[var(--gray-600)]">
+          <p className="text-lg text-[var(--gray-600)] md:text-xl">
             Dernière mise à jour : {new Date().toLocaleDateString("fr-FR", {
               year: "numeric",
               month: "long",
@@ -25,7 +25,7 @@ export default function CGUPage() {
           </p>
         </AnimatedSection>
 
-        <div className="space-y-8">
+        <div className="space-y-8 md:space-y-10">
           <AnimatedSection>
             <Card className="p-8">
               <h2 className="mb-4 text-2xl font-bold text-[var(--gray-900)]">

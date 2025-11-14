@@ -38,7 +38,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden pt-20">
       {/* Top Section - Light Green Background */}
       <div className="relative bg-[var(--green-50)] py-24 md:py-32 lg:py-40">
         <Container>

@@ -26,20 +26,20 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="py-20 md:py-32">
+    <div className="pt-24 pb-24 md:pt-32 md:pb-32 lg:pt-40 lg:pb-40">
       <Container>
         {/* Hero */}
-        <AnimatedSection className="mb-16 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl">
+        <AnimatedSection className="mb-16 md:mb-20 text-center">
+          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl lg:text-6xl">
             Questions fréquentes
           </h1>
-          <p className="mx-auto max-w-3xl text-lg text-[var(--gray-600)]">
+          <p className="mx-auto max-w-3xl text-lg text-[var(--gray-600)] md:text-xl">
             Trouvez rapidement les réponses à vos questions
           </p>
         </AnimatedSection>
 
         {/* FAQ Sections */}
-        <div className="space-y-12">
+        <div className="space-y-12 md:space-y-16">
           {faqData.map((category, categoryIndex) => (
             <AnimatedSection key={category.category} delay={categoryIndex * 0.1}>
               <div>
@@ -86,7 +86,7 @@ export default function FAQPage() {
         </div>
 
         {/* CTA */}
-        <AnimatedSection className="mt-16">
+        <AnimatedSection className="mt-16 md:mt-20">
           <Card className="bg-gradient-to-br from-[var(--green-50)] to-[var(--blue-50)] p-8 text-center">
             <h3 className="mb-4 text-2xl font-bold text-[var(--gray-900)]">
               Vous avez d'autres questions ?

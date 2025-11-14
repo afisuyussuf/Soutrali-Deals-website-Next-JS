@@ -40,14 +40,14 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="py-20 md:py-32">
+    <div className="pt-24 pb-24 md:pt-32 md:pb-32 lg:pt-40 lg:pb-40">
       <Container>
         {/* Hero */}
-        <AnimatedSection className="mb-16 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl">
+        <AnimatedSection className="mb-16 md:mb-20 text-center">
+          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl lg:text-6xl">
             Contactez-nous
           </h1>
-          <p className="mx-auto max-w-3xl text-lg text-[var(--gray-600)]">
+          <p className="mx-auto max-w-3xl text-lg text-[var(--gray-600)] md:text-xl">
             Une question ? Une suggestion ? Nous sommes là pour vous aider.
           </p>
         </AnimatedSection>
@@ -85,10 +85,10 @@ export default function ContactPage() {
                       Téléphone
                     </h3>
                     <a
-                      href="tel:+2250000000000"
+                      href="tel:+2250787049637"
                       className="text-[var(--gray-600)] transition-colors hover:text-[var(--primary-green)]"
                     >
-                      +225 00 00 00 00 00
+                      +225 07 87 04 96 37
                     </a>
                   </div>
                 </div>

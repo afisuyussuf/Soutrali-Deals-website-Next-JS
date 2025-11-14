@@ -49,26 +49,26 @@ const sellerBenefits = [
 
 export default function MarketplacePage() {
   return (
-    <div className="py-20 md:py-32">
+    <div className="pt-24 pb-24 md:pt-32 md:pb-32 lg:pt-40 lg:pb-40">
       <Container>
         {/* Hero */}
-        <AnimatedSection className="mb-16 text-center">
+        <AnimatedSection className="mb-16 md:mb-20 text-center">
           <div className="mb-6 flex justify-center">
             <div className="rounded-full bg-[var(--green-50)] p-6">
               <ShoppingBag className="h-12 w-12 text-[var(--primary-green)]" />
             </div>
           </div>
-          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl">
+          <h1 className="mb-4 text-4xl font-bold text-[var(--gray-900)] md:text-5xl lg:text-6xl">
             Marketplace Soutrali Deals
           </h1>
-          <p className="mx-auto max-w-3xl text-lg text-[var(--gray-600)]">
+          <p className="mx-auto max-w-3xl text-lg text-[var(--gray-600)] md:text-xl">
             Vendez vos produits en ligne et développez votre activité e-commerce
             en Côte d'Ivoire
           </p>
         </AnimatedSection>
 
         {/* Concept */}
-        <AnimatedSection className="mb-16">
+        <AnimatedSection className="mb-16 md:mb-20">
           <Card className="p-8 md:p-12">
             <h2 className="mb-6 text-3xl font-bold text-[var(--gray-900)]">
               Notre concept
@@ -95,7 +95,7 @@ export default function MarketplacePage() {
           description="Explorez nos différentes catégories"
         />
 
-        <div className="mb-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mb-16 md:mb-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {productCategories.map((category, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
               <Card hover>
@@ -116,7 +116,7 @@ export default function MarketplacePage() {
           description="Comment vendre sur notre marketplace"
         />
 
-        <div className="mb-16 grid gap-6 md:grid-cols-4">
+        <div className="mb-16 md:mb-20 grid gap-6 md:grid-cols-4">
           {[
             {
               step: 1,
@@ -158,7 +158,7 @@ export default function MarketplacePage() {
         </div>
 
         {/* Benefits */}
-        <div className="mb-16 grid gap-8 md:grid-cols-2">
+        <div className="mb-16 md:mb-20 grid gap-8 md:grid-cols-2">
           <AnimatedSection>
             <Card className="h-full p-8">
               <h2 className="mb-6 text-2xl font-bold text-[var(--gray-900)]">
