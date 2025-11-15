@@ -192,3 +192,18 @@ Le projet peut être déployé sur toute plateforme supportant Next.js :
 ## 📄 Licence
 
 Propriété de Soutrali Deals. Tous droits réservés.
+
+## 📄 Crédits
+
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide React](https://lucide.dev/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vercel](https://vercel.com/)
+- [Netlify](https://netlify.com/)
+- [AWS Amplify](https://aws.amazon.com/amplify/)
+- [Railway](https://railway.app/)
+- [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/)
+
+
