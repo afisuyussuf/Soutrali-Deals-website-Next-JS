@@ -1,0 +1,21 @@
+# Robots.txt pour Soutrali Deals
+# https://soutralideals.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://soutralideals.com/sitemap.xml
+
+# Désactiver l'indexation des pages de développement
+Disallow: /api/
+Disallow: /.next/
+Disallow: /_next/
+
+# Autoriser les ressources importantes
+Allow: /images/
+Allow: /fonts/
+
+# Crawl-delay pour éviter la surcharge
+Crawl-delay: 1
+

@@ -9,13 +9,16 @@ export function generateMetadata({
   description,
   keywords,
   ogImage,
+  canonical,
 }: {
   title: string;
   description: string;
   keywords?: string[];
   ogImage?: string;
+  canonical?: string;
 }): Metadata {
   const fullTitle = `${title} | ${siteConfig.name}`;
+  const canonicalUrl = canonical || siteConfig.url;
 
   return {
     metadataBase: new URL(siteConfig.url),
@@ -28,13 +31,22 @@ export function generateMetadata({
       "services",
       "paiements",
       "Abidjan",
+      "plateforme e-commerce",
+      "services en ligne",
+      "paiement mobile",
+      "Orange Money",
+      "MTN Mobile Money",
     ],
     authors: [{ name: siteConfig.name }],
     creator: siteConfig.name,
+    publisher: siteConfig.name,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       type: "website",
       locale: "fr_CI",
-      url: siteConfig.url,
+      url: canonicalUrl,
       title: fullTitle,
       description,
       siteName: siteConfig.name,
@@ -64,6 +76,12 @@ export function generateMetadata({
         "max-image-preview": "large",
         "max-snippet": -1,
       },
+    },
+    verification: {
+      // À ajouter quand vous aurez les codes de vérification
+      // google: "votre-code-google",
+      // yandex: "votre-code-yandex",
+      // bing: "votre-code-bing",
     },
   };
 }
